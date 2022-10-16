@@ -1,8 +1,10 @@
 #Función para leer numeros estrictamente distintos de 0.
 def introducir_num():
+  i=0
   try:
     num=int (input("Introduzca un numero\n"))
-    while num==0:
+    while num==0 and i==0:
+    i+=1
       num=int (input("Error. Introduzca un numero\n"))
   except:
     pass
